@@ -1,0 +1,19 @@
+﻿@model My_project.Models.User
+@{
+    ViewBag.Title = "EditUser";
+}
+
+<div class="container body-content">
+        <h2>Edit user information.</h2>
+    <br />
+        @using (var form = Html.BeginForm("UpdateUser", "Home"))
+        {
+            @Html.HiddenFor(x => x.ID);
+            <form class="form-inline">
+            <p>First Name: @Html.TextBoxFor(x => x.FirstName)</p>
+            <p>Last Name: @Html.TextBoxFor(x => x.LastName)</p>
+            <p><input type="submit" value="UPDATE USER" name="Update User" class="btn btn-primary btn-lg" /></p>
+            </form>
+        }
+</div>
+

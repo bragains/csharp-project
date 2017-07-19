@@ -1,0 +1,117 @@
+﻿body {
+    width: 100%;
+    
+}
+
+
+/* Set padding to keep content from hitting the edges*/
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 60px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+#site-header {
+    background-color: #191D4E;
+    width: 100% !important;
+}
+
+.middle {
+    padding-top: 10em;
+    float: left;
+    max-width: 50%;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    float: right;
+}
+
+.whiteline {
+    max-width: 50%;
+}
+
+h1 {
+    font-family: 'Josefin Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+p, h2, h3, h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #191D4E;
+}
+
+.white {
+   color: #fff;
+}
+
+
+.logo1 {
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo2 {
+    font-weight: 800;
+    color: #1A7DC2;
+}
+
+.lead {
+    font-size: 100%;
+}
+
+.navbar {
+    background-color: #191D4E;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.icon-bar {
+    background-color: #1A7DC2 !important;
+}
+
+.navbar-brand {
+    font-family: 'Josefin Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-primary {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+
+
+.navbar-header, .navbar-collapse, .collapse {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.jumbotron {
+    background-color: #191D4E;
+    margin: 0px;
+    
+    
+}
+

@@ -1,0 +1,14 @@
+﻿@model My_project.Models.User
+@{
+    ViewBag.Title = "SingleUser";
+}
+
+<div class="container body-content">
+    <h2>Successfully added new user:</h2>
+    <br />
+    <h3>@Model.FirstName @Model.LastName</h3>
+    <br />
+    <br />
+    <div class="btn btn-primary">@Html.ActionLink("view users", "ViewUsers", "Home")</div>
+</div>
+

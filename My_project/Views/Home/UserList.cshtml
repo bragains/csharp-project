@@ -1,0 +1,29 @@
+﻿@model List<My_project.Models.User>
+@{
+    ViewBag.Title = "UserList";
+}
+
+<div class="container body-content">
+    <h2>Active users:</h2>
+    <br />
+    <table class="table table-striped">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th></th>
+            <th></th>
+        </tr>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.FirstName</td>
+                <td>@user.LastName</td>
+                <td>@Html.ActionLink("Edit User", "EditUser", new { ID = user.ID })</td>
+                <td>@Html.ActionLink("Delete User", "DeleteUser", new { ID = user.ID})</td>
+            </tr>
+        }
+    </table>
+
+</div>
+
+

@@ -1,0 +1,21 @@
+﻿@model My_project.Models.User
+@{
+    ViewBag.Title = "DeleteUser";
+}
+
+<div class="container body-content">
+    <h2>Delete this user?</h2>
+    <br />
+    @using (var form = Html.BeginForm("DeleteUser", "Home"))
+    {
+        @Html.HiddenFor(x => x.ID);
+        <form class="form-inline">
+            <p>First Name: @Html.DisplayFor(x => x.FirstName)</p>
+            <p>Last Name: @Html.DisplayFor(x => x.LastName)</p>
+            <p><input type="submit" value="DELETE USER" name="Delete User" class="btn btn-primary btn-lg" /></p>
+        </form>
+    }
+</div>
+
+
+

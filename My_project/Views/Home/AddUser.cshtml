@@ -1,0 +1,18 @@
+﻿@model My_project.Models.User
+@{
+    ViewBag.Title = "AddUser";
+}
+
+<div class="container body-content">
+        <h2>Add new user.</h2>
+        <br />
+        @using (var form = Html.BeginForm("AddUser", "Home"))
+        {
+            <form class="form-inline">
+            <p>First Name: @Html.TextBoxFor(x => x.FirstName)</p>
+            <p>Last Name: @Html.TextBoxFor(x => x.LastName)</p>
+            <p><input type="submit" value="Add User" name="Add User" class="btn btn-primary btn-lg" /></p>
+            </form>
+        }
+</div>
+
