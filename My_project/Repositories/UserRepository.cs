@@ -16,12 +16,15 @@ namespace My_project.Repositories
 
         }
 
+
+        //add user to database
         public void AddUser(User user)
         {
             Users.Add(user);
             this.SaveChanges();     
         }
 
+        //retrieve user for editing
         public User GetUser(int id)
         {
             return (from user in Users
@@ -29,12 +32,15 @@ namespace My_project.Repositories
              select user).First();
         }
 
+        //edit user information using GetUser command
         public void EditUser(User user)
         {
             this.Entry(user).State = EntityState.Modified;
             this.SaveChanges();
         }
 
+
+        //retrieve user to delete from database
         public User RetrieveUser(int id)
         {
             return (from user in Users
@@ -42,6 +48,8 @@ namespace My_project.Repositories
                     select user).First();
         }
 
+
+        //delete user from database
         public void RemoveUser(User user)
         {
             this.Entry(user).State = EntityState.Deleted;

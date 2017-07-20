@@ -40,7 +40,7 @@ namespace My_project.Controllers
             return View();
         }
 
-        // CREATE USER
+        // RETURNS VIEW TO ADD USER
 
         public ActionResult CreateUser()
         {
@@ -48,7 +48,7 @@ namespace My_project.Controllers
         }
 
 
-        // ADD USER
+        // ADD USER TO DB
 
         public ActionResult AddUser(User user)
         {
@@ -59,7 +59,7 @@ namespace My_project.Controllers
             }     
         }
 
-        // VIEW USERS
+        // VIEW USERS IN DB
 
         public ActionResult ViewUsers()
         {
@@ -69,7 +69,7 @@ namespace My_project.Controllers
             }
         }
 
-        // EDIT USER
+        // RETURNS VIEW FOR EDITING USER
 
         public ActionResult EditUser(int id)
         {
@@ -79,7 +79,7 @@ namespace My_project.Controllers
             }
         }
 
-        // UPDATE USER
+        // RETURNS REFRESHED VIEW AFTER USER HAS BEEN UPDATED
 
         public ActionResult UpdateUser(User user)
         {
@@ -90,7 +90,8 @@ namespace My_project.Controllers
             }
         }
 
-        // DELETE USER
+        // NOT SURE IF THIS FUNCTION IS WORKING PROPERLY.
+        //WOULD LIKE TO HAVE THE DELETE USER LINK RETURN DeleteUser VIEW TO CONFIRM BEFORE DELETING.
 
         public ActionResult RemoveUser(int id)
         {
@@ -100,7 +101,8 @@ namespace My_project.Controllers
             }
         }
 
-        
+
+        //DELETE USER FROM DB
         public ActionResult DeleteUser(User user)
         {
             using (var repo = new UserRepository())

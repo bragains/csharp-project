@@ -35,9 +35,7 @@ textarea {
 }
 
 .middle {
-    padding-top: 10em;
-    float: left;
-    max-width: 50%;
+    padding-top: 7em;
 }
 
 img {
@@ -47,7 +45,7 @@ img {
 }
 
 .whiteline {
-    max-width: 50%;
+    width: 100%;
 }
 
 h1 {
@@ -111,6 +109,7 @@ p, h2, h3, h4 {
 .jumbotron {
     background-color: #191D4E;
     margin: 0px;
+    height: 100vh;
     
     
 }
